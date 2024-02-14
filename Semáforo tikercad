@@ -1,0 +1,55 @@
+// C++ code
+//
+void setup()
+{
+  pinMode(13, OUTPUT);//VERMELHO 1
+  pinMode(12, OUTPUT);//VERDE
+  pinMode(11, OUTPUT);//AMARELO 1
+  pinMode(10, OUTPUT);//VERMELHO 2 
+  pinMode(9, OUTPUT);//VERDE 2
+  pinMode(8, OUTPUT);//AMARELO 2
+  
+}
+
+void loop()
+{ 
+  digitalWrite(13,HIGH);//VERMELHO 1
+  digitalWrite(12, LOW);//VERDE 1
+  digitalWrite(11, LOW);// AMARELO 1
+  digitalWrite(10,LOW);//VERMELHO 2
+  digitalWrite(9, HIGH);//VERDE 2
+  digitalWrite(8, LOW);// AMARELO 2
+  
+  delay(3000); // Wait for 1000 millisecond(s)
+  
+  digitalWrite(13, HIGH);//VERMELHO 1
+  digitalWrite(12, LOW);//VERDE 1
+  digitalWrite(11, LOW);//AMARELO 1
+  digitalWrite(10,LOW);//VERMELHO 2
+  digitalWrite(9, LOW);//VERDE 2
+  digitalWrite(8, HIGH);// AMARELO 2
+  
+  delay(1500); // Wait for 1000 millisecond(s)
+  
+  digitalWrite(13, LOW);//VERMELHO 1
+  digitalWrite(12, HIGH);//VERDE 1
+  digitalWrite(11,LOW);//AMARELO 1
+  digitalWrite(10,HIGH);//VERMELHO 2
+  digitalWrite(9, LOW);//VERDE 2
+  digitalWrite(8, LOW);// AMARELO 2
+  
+  delay(3000); // Wait for 1000 millisecond(s)
+  
+  
+  digitalWrite(13, LOW);//VERMELHO 1
+  digitalWrite(12, LOW);//VERDE 1
+  digitalWrite(11,HIGH);//AMARELO 1
+  digitalWrite(10,HIGH);//VERMELHO 2
+  digitalWrite(9, LOW);//VERDE 2
+  digitalWrite(8, LOW);// AMARELO 2
+  
+  delay(1500); // Wait for 1000 millisecond(s)
+  
+// OUTRO LADO SEMAFORO 
+  
+}
