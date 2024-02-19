@@ -12,7 +12,7 @@ void setup()
   pinMode(6, OUTPUT);// verde p/1
   pinMode(5, OUTPUT);//vermelho P/2
   pinMode(4, OUTPUT);//verde P/2
- //o 1 é o de carros, e o 2 de pedestres 
+
   
 }
 
