@@ -1,0 +1,89 @@
+// C++ code
+//
+const int buttonPin1 = 5;
+const int buttonPin2 = 4;
+const int buttonPin3 = 3;
+int buttonState1 = 0;
+int buttonState2 = 0;
+int buttonState3 = 0;
+
+
+void setup()
+{
+  pinMode(buttonPin1,INPUT);
+  pinMode(buttonPin2,INPUT);
+  pinMode(buttonPin3,INPUT);
+  
+  pinMode(13, OUTPUT);//direita
+  pinMode(12, OUTPUT);//direita
+  pinMode(11, OUTPUT);//esquerda
+  pinMode(10, OUTPUT);//esquerda
+  }
+void loop()
+{ 
+  buttonState1 = digitalRead(buttonPin1);
+  buttonState2 = digitalRead(buttonPin2);
+  buttonState3 = digitalRead(buttonPin3);
+
+  //lado direito do carro 
+  if (buttonState1 == HIGH){ 
+  
+  digitalWrite(13,HIGH);
+  digitalWrite(12,HIGH);
+    
+   delay(1000);  
+  
+  digitalWrite(13,LOW);
+  digitalWrite(12,LOW);
+  
+  delay(1000);
+   
+  }else {
+  digitalWrite(13,LOW);
+  digitalWrite(12,LOW);
+  
+  }
+  //lado esquerdo do carro 
+  if (buttonState2 == HIGH){
+    
+  digitalWrite(11,HIGH);
+  digitalWrite(10,HIGH);
+    
+   delay(1000);  
+  
+  digitalWrite(11,LOW);
+  digitalWrite(10,LOW);
+  
+  delay(1000);
+   
+  }else {
+    
+  digitalWrite(11,LOW);
+  digitalWrite(10,LOW);
+  
+  }
+  // pisca alerta 
+  if (buttonState3 == HIGH){
+    
+  digitalWrite(13,HIGH);
+  digitalWrite(12,HIGH);
+  digitalWrite(11,HIGH);
+  digitalWrite(10,HIGH);
+  
+  delay(1000);
+ 
+  digitalWrite(13,LOW);
+  digitalWrite(12,LOW);
+  digitalWrite(11,LOW);
+  digitalWrite(10,LOW);
+  
+   delay(1000);
+    
+  }else {
+  digitalWrite(13,LOW);
+  digitalWrite(12,LOW);
+  digitalWrite(11,LOW);
+  digitalWrite(10,LOW);
+}}
+  
+  
