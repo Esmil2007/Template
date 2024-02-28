@@ -1,0 +1,36 @@
+// C++ code
+//
+
+const int buttonPin = 2;
+int buttonState = 0;
+
+int horario = 1;
+
+const int Ar = 3;
+int ArState = 0;
+  
+  
+void setup()
+{
+  pinMode(Ar,OUTPUT);
+  pinMode(buttonPin,INPUT);
+  
+  
+}
+
+void loop()
+{
+buttonState = digitalread(buttonPin);
+  
+  if( horario >  22 && <  7){
+  digitalwrite(ar,LOW}
+  else{horario > 7 && < 22}
+               
+delay(2000)
+horario = horario + 1;
+            
+    
+  
+
+ 
+}
