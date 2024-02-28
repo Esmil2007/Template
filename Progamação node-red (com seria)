@@ -1,0 +1,25 @@
+// C++ code
+//
+ 
+const int buttonPin1 = 2;
+
+int buttonState1 = 0;
+
+void setup() {
+ pinMode(buttonPin1,INPUT);
+ Serial.begin(9600);
+ 
+
+}
+
+void loop() {
+buttonState1 = digitalRead(buttonPin1);
+
+if(buttonState1 == HIGH){
+   Serial.println("ligado");
+   
+  }else{
+    
+  Serial.println("desligado");
+  
+}}
