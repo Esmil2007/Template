@@ -1,0 +1,50 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 11/03/2024
+Var
+// Seção de Declarações das variáveis
+nota1:real
+nota2:real
+nota3:real
+media:real
+resultado:caractere
+//aprovado:caractere
+//reprovado:caractere
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+escreval("qual sua primeira nota ?")
+leia(nota1)
+escreval("qual sua segunda nota ?")
+leia(nota2)
+escreval("qual sua nota do trabalho ?")
+leia(nota3)
+
+media <- (nota1 + nota2 + nota3)/3
+
+ se(media <5 )entao
+ resultado <- "i"
+ senao
+   se(media <7) entao
+   resultado <- "R"
+   senao
+     se (media <9) entao
+     resultado <- "B"
+     senao
+     resultado <- "MB"
+
+ FIMSE
+  FIMSE
+   FIMSE
+
+
+ESCReval(" ")
+escreval("o seu resultado final é:", media)
+escreval("seu resultado final é:",resultado)
+
+
+Fimalgoritmo
