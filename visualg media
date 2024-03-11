@@ -12,6 +12,7 @@ Var
  media: real
 
 Inicio
+media<- (numero1 + numero2 + numero3)/3
 // Seção de Comandos, procedimento, funções, operadores, etc... 
  escreval("digite um numero")
  leia(numero1)
@@ -24,3 +25,4 @@ Inicio
  escreval("digite outro numero")
  leia(numero3)
  escreval(" ")
+ Escreval("a media desses numeros é:",media) 
