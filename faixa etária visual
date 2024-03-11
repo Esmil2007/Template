@@ -1,0 +1,48 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 11/03/2024
+Var
+
+idade:real
+resultado:caractere
+
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+escreval("qual sua idade ?")
+leia(idade)
+
+
+
+
+ se(idade <13 ) entao
+ resultado <- "criança"
+ senao
+   se(idade <18) entao
+   resultado <- "adolescente"
+   senao
+     se (idade <21) entao
+     resultado <- "jovem"
+     senao
+      se(idade<60) entao
+      resultado <- "adulto
+      senao
+      reultado <- "idoso"
+
+     
+
+ FIMSE
+  FIMSE
+   FIMSE
+   fimse
+
+
+ESCReval(" ")
+escreval("sua faixa etaria:",resultado)
+
+
+Fimalgoritmo
