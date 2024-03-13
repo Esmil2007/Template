@@ -1,0 +1,64 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 13/03/2024
+Var
+// Seção de Declarações das variáveis 
+anoveiculo:inteiro
+ipva:real
+valorveiculo:real
+anoatual:inteiro
+resposta:caractere
+idadeveiculo:inteiro
+modelo:inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval("vamos calcular o valor de seu IPVA!")
+escreval("qual o ano do seu veiculo ?")
+leia(anoveiculo)
+
+escreval("qual ano atual?")
+leia(anoatual)
+idadeveiculo <- anoatual - anoveiculo
+
+ se(idadeveiculo>20)entao
+ ipva<-0
+ senao
+ 
+
+ //escreval("qual o valor do seu veiculo?")
+ //leia(valorveiculo)
+ //escreval("qual o modelo do seu carro ?")
+ //leia(modelo)
+ escreval("modelo-1: carro flex")
+ escreval("modelo-2: carro elétrico")
+ escreval("modelo-3: carro GNV")
+ escreval("modelo-4: moto")
+ escreval("responder somente o numero")
+ leia(modelo)
+ 
+ fimse
+ 
+ escreval("qual o valor do seu veiculo?")
+ leia(valorveiculo)
+ 
+   se(modelo < 1)entao
+   ipva <- valorveiculo*0.04
+   senao
+     se(modelo < 2)entao
+     ipva <- valorveiculo*0.005
+     senao
+       se(modelo < 3)entao
+       ipva <- valorveiculo*0.015
+       senao
+       ipva <- valorveiculo*0.02
+
+
+ 
+ fimse
+  fimse
+  fimse
+  escreval("ett o valor do seu IPVA É:",ipva)
