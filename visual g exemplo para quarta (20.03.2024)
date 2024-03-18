@@ -1,0 +1,25 @@
+algoritmo "exemplo para quarta"
+
+var
+x: inteiro
+continuar:caractere
+inicio
+continuar <- "s"
+x <- 1
+
+enquanto continuar = "s" faca
+escreval(x)
+
+se (x mod  2 = 0) entao
+  escreval(" - par")
+senao
+  escreval(" - impar")
+fimse
+ escreval("deseja continuar ? [s/n]")
+ leia(continuar)
+ escreval("")
+ se continuar = "s" entao
+   x <- x + 1
+ fimse
+fimenquanto
+fimalgoritmo
