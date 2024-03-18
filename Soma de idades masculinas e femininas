@@ -1,0 +1,49 @@
+algoritmo "Números de 1 a 10"
+
+
+var
+K:inteiro
+idade: inteiro
+NOME:caractere
+//total:inteiro
+totalf:inteiro
+totalm:inteiro
+sexo:inteiro
+inicio
+
+
+para K de 1 ate 6 faca
+ escreval("selecione seu sexo:")
+ escreval("1 - para masculino")
+ escreval("2 - feminimo")
+ Leia(sexo)
+ 
+ Se(sexo<2) entao
+ Escreval(" ")
+ Escreval("qual sua idade?:")
+ Leia(idade)
+ Escreval(" ")
+ Escreval("qual seu nome?:")
+ Leia(NOME)
+ 
+ totalm <- totalm + idade
+ 
+ Senao
+ Escreval("qual sua idade?:")
+ Leia(idade)
+ Escreval("")
+ Escreval("qual seu nome?:")
+ Leia(NOME)
+
+ totalf <- totalf + idade
+ 
+ fimse
+
+ Escreval(K,") NOME: ", NOME, "  IDADE: ", idade, " anos ")
+
+fimpara
+ escreval("-----------------------------")
+ escreval(" A soma da idades é:", totalm)
+ escreval(" A soma da idades é:", totalf)
+
+fimalgoritmo
