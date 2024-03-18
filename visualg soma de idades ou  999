@@ -1,0 +1,60 @@
+algoritmo " idade 999 "
+var
+idade: inteiro
+NOME:caractere
+totalf:inteiro
+totalm:inteiro
+sexo:inteiro
+idadestotais:inteiro
+idadeshomens:inteiro
+idadesmulheres:inteiro
+maioridade:inteiro
+inicio
+idade <- 0
+
+enquanto idade  <> 999 FACA
+escreval("digite sua idade ou 999 para o fim")
+leia(idade)
+
+se(idade <> 999) então
+
+idadestotais <- idadestotais + 1
+escreval("qual seu sexo ?")
+Escreval(" 1- para masculino")
+Escreval(" 2- para mulheres")
+leia(sexo)
+
+se( idade > maioridade) entao
+maioridade <- idade
+fimse
+
+Se(sexo<2) entao
+ Escreval(" ")
+ idadeshomens <- idadeshomens + 1
+ totalm <- totalm + idade
+
+ Senao
+ Escreval("")
+ idadesmulheres <- idadesmulheres + 1
+ totalf <- totalf + idade
+fimse
+fimse
+se (idade = 999) entao
+escreval("a soma das idades das mulheres é", totalf)
+Escreval("-----------------------------------------------------------------")
+escreval("a soma das idades dos homens é", totalm)
+Escreval("-----------------------------------------------------------------")
+escreval("o numero de idades de mulheres digitadas foram:", idadesmulheres)
+Escreval("-----------------------------------------------------------------")
+escreval("o numero de idades de homens digitadas foram:", idadeshomens)
+Escreval("-----------------------------------------------------------------")
+escreval(" a maior idade é:", maioridade )
+Escreval("-----------------------------------------------------------------")
+escreval(" o numero de idade totais é:", idadestotais)
+fimse
+
+fimenquanto
+
+
+
+fimalgoritmo
