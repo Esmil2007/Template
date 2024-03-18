@@ -1,0 +1,28 @@
+algoritmo "K"
+
+var
+
+K: inteiro
+continuar:caractere
+inicio
+continuar <- "s"
+K <- 1
+
+enquanto continuar = "s" faça
+          escreva(K)
+          
+          escreval("- deseja continuar ? [s/n]")
+          leia(continuar)
+          escreval("")
+          
+          Se continuar = "s" entao
+          escreval
+          K <- K + 1
+
+          fimse
+fimenquanto
+escreval("EXECUÇÕES =", K)
+
+
+
+fimalgoritmo
