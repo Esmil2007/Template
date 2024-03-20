@@ -1,0 +1,122 @@
+Algoritmo "semnome"
+
+Var
+// Seção de Declarações das variáveis 
+decimal:inteiro
+resto1:inteiro
+resto2:inteiro
+cociente1:inteiro
+cocientefinal: inteiro
+
+Inicio
+
+
+
+Escreval("Digite um numero Decimal para transformalo em Hexadecimal")
+leia(decimal)
+
+Se (decimal < 999) entao
+
+cociente1 <- decimal div 16
+resto1 <- decimal mod 16
+
+se(cociente1 > 15) entao
+
+cocientefinal <- cociente1 div 16
+resto2 <- cociente1 mod 16
+
+ se(cocientefinal < 10)entao
+ escreva(cocientefinal)
+ senao
+   se(cocientefinal = 10)entao
+   escreva("A")
+   senao
+      se(cocientefinal = 11)entao
+      escreva("B")
+      senao
+         se(cocientefinal = 12)entao
+             escreva("C")
+            senao
+               se(cocientefinal = 13)entao
+                escreva("D")
+               senao
+                 se(cocientefinal = 14)entao
+                 escreva("E")
+                 senao
+                 escreva("F")
+
+                    fimse
+                     fimse
+                      fimse
+                       fimse
+                        fimse
+                         fimse
+                          fimse
+
+se(resto2 < 10)entao
+ESCREVA(resto2)
+senao
+   se(resto2 = 10)entao
+   escreva("A")
+   senao
+      se(resto2 = 11)entao
+      escreva("B")
+      senao
+         se(resto2 = 12)entao
+         escreva("C")
+            senao
+               se(resto2 = 13)entao
+                escreva("D")
+               senao
+                 se(resto2 = 14)entao
+                  escreva("E")
+                 senao
+                 escreva("F")
+
+
+                     fimse
+                      fimse
+                       fimse
+                        fimse
+                         fimse
+                         fimse
+se(cociente1>15)entao
+cocientefinal <- cociente1 div 16
+resto2 <- cociente1 mod 16
+senao
+fimse
+ se(resto1 < 10)entao
+ escreva(resto1)
+ senao
+    se(resto1 = 10)entao
+    escreva("A")
+    senao
+       se(resto1 = 11)entao
+       escreva("B")
+       senao
+          se(resto1 = 12)entao
+          escreva("C")
+          senao
+             se(resto1 = 13)entao
+             escreva("D")
+             senao
+              se(resto1 = 14)entao
+              escreva("E")
+              senao
+              escreva("F")
+
+
+
+                  fimse
+                   fimse
+                    fimse
+                     fimse
+                      fimse
+                       fimse
+senao
+escreval("O decimal digitado so pode ser até 999")
+fimse
+
+
+
+Fimalgoritmo
