@@ -1,0 +1,32 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 20/03/2024
+Var
+// Seção de Declarações das variáveis 
+valordeentrada, guardavalor:inteiro
+resto:inteiro
+resultado:caractere
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+Escreval("digite um numero:")
+leia(valordeentrada)
+guardavalor <- valordeentrada
+
+Enquanto valordeentrada> 0 faca
+ se (valordeentrada mod 2)= 0 entao
+  resultado <- "0" + resultado
+ senao
+ resultado <- "1"  + resultado
+ fimse
+ valordeentrada <- valordeentrada div 2
+fimenquanto
+escreval(guardavalor, "=", resultado)
+
+
+
+Fimalgoritmo
