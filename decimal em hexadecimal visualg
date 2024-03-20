@@ -15,13 +15,13 @@ Inicio
 Escreval("Digite um numero Decimal para transformalo em Hexadecimal")
 leia(decimal)
 
-Se (decimal < 999) entao
+
 
 cociente1 <- decimal div 16
 resto1 <- decimal mod 16
 
-se(cociente1 > 15) entao
-
+//se(cociente1 > 15) entao
+//se (coeficientefinal <1)
 cocientefinal <- cociente1 div 16
 resto2 <- cociente1 mod 16
 
@@ -44,6 +44,7 @@ resto2 <- cociente1 mod 16
                  escreva("E")
                  senao
                  escreva("F")
+                 //senao
 
                     fimse
                      fimse
@@ -51,7 +52,7 @@ resto2 <- cociente1 mod 16
                        fimse
                         fimse
                          fimse
-                          fimse
+                          //fimse
 
 se(resto2 < 10)entao
 ESCREVA(resto2)
@@ -80,11 +81,7 @@ senao
                         fimse
                          fimse
                          fimse
-se(cociente1>15)entao
-cocientefinal <- cociente1 div 16
-resto2 <- cociente1 mod 16
-senao
-fimse
+
  se(resto1 < 10)entao
  escreva(resto1)
  senao
@@ -113,9 +110,9 @@ fimse
                      fimse
                       fimse
                        fimse
-senao
+
 escreval("O decimal digitado so pode ser até 999")
-fimse
+
 
 
 
