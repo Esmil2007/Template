@@ -20,8 +20,7 @@ leia(decimal)
 cociente1 <- decimal div 16
 resto1 <- decimal mod 16
 
-//se(cociente1 > 15) entao
-//se (coeficientefinal <1)
+
 cocientefinal <- cociente1 div 16
 resto2 <- cociente1 mod 16
 
@@ -111,7 +110,6 @@ senao
                       fimse
                        fimse
 
-escreval("O decimal digitado so pode ser até 999")
 
 
 
