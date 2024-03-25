@@ -1,0 +1,75 @@
+Algoritmo "vetor numeros"
+
+Var
+   vezes: inteiro
+   pares:vetor [1..10] de inteiro
+   indice_pares: inteiro
+   impares:vetor [1..10] de inteiro
+   indice_impares: inteiro
+   quantidade:inteiro
+   x:inteiro
+   numeros: inteiro
+
+   //ordem
+
+   ordem:inteiro
+   i: inteiro
+
+
+
+Inicio
+   indice_pares <- 0
+   indice_impares <- 0
+
+
+
+   Escreval("quantos numeros vc deseja digitar ?")
+   leia (quantidade)
+
+   para x de 1 ate quantidade faca
+      escrevaL("digite um numero")
+      leia(numeros)
+
+      se( numeros mod 2 = 0) entao
+         indice_pares <- indice_pares +1
+         pares[indice_pares] <- numeros
+      senao
+         indice_impares <- indice_impares +1
+         impares[indice_impares] <- numeros
+      fimse
+   fimpara
+   escreval("como vc deseja exibir os numeros?" )
+   EScreval(" Ordem PAR digitada - 1")
+   escreval(" Ordem PAR inversa - 2")
+   escreval(" Ordem IMPAR digita - 3")
+   escreval(" Ordem IMPAR inversa - 4")
+   leia(ordem)
+
+   se(ordem < 2) entao
+      Para x de 1 ate indice_pares faca
+         escreval(x,":" , pares[x])
+      fimpara
+   fimse
+
+   se(ordem < 3 ) entao
+      Para x de indice_pares até 1 passo -1 faca
+         escreval(x,":" , pares[x])
+      fimpara
+   fimse
+
+   se(ordem < 4) entao
+      Para x de 1 ate indice_impares faca
+         escreval(x,":" , impares[x])
+      fimpara
+   fimse
+   
+   se(ordem  < 5) entao
+      Para x de indice_impares até 1 passo -1 faca
+         escreval(x,":" , impares[x])
+      fimpara
+   fimse
+
+
+
+
+Fimalgoritmo
