@@ -1,0 +1,244 @@
+int led[10]; //DEFINIR QUANTOD LEDS TERA NO CONJUNTO
+
+void setup()
+{
+ // DEFINA QUAL VOU REFERENCIAR  
+  led[0]= 13; 
+  led[1]= 12;
+  led[2]= 11;
+  led[3]= 10;
+  led[4]= 9;
+  led[5]= 8;
+  led[6]= 7;
+  led[7]= 6;
+  led[8]= 5;
+  led[9]= 4;
+  
+ //DEFINA COMO O LED SE COMPORTA 
+  pinMode(led[0], OUTPUT);// ->  verde/ carro
+  pinMode(led[1], OUTPUT);// ->  amarelo/ carro
+  pinMode(led[2], OUTPUT);// ->  vermelho/carro
+  pinMode(led[3], OUTPUT);// ->  verde/pedestres
+  pinMode(led[4], OUTPUT);// ->  vermelho/pedestre
+  pinMode(led[5], OUTPUT);// ->  verde/ carro 2
+  pinMode(led[6], OUTPUT);// ->  amarelo/ carro 2
+  pinMode(led[7], OUTPUT);// ->  vermelho/carro 2
+  pinMode(led[8], OUTPUT);// ->  verde/pedestres 2
+  pinMode(led[9], OUTPUT);// ->  vermelho/pedestre 2
+  
+  
+}
+
+void loop()
+{ 
+
+ 
+//semaforo 1
+  digitalWrite(led[0],HIGH);//VERDE 1
+  Serial.println("Led VERDE 1 esta aceso");
+
+  digitalWrite(led [1], LOW);//AMARELO 1
+  Serial.println("Led AMARELO 1 esta apagado");
+
+  digitalWrite(led [2], LOW);//VERMELHO 1
+  Serial.println("Led VEREMELHO 1 esta apagado");
+
+//semaforo 2
+  digitalWrite(led [5],LOW);//VERDE 2
+  Serial.println("Led VERDE 2 esta apagado");
+
+  digitalWrite(led [6], LOW);//AMARELO 2
+  Serial.println("Led AMARELO 2 esta apagado");
+
+  digitalWrite(led [7], HIGH);//VERMELHO 2
+  Serial.println("Led VERMELHO 2 esta aceso");
+
+ //pedestre 1
+  digitalWrite(led [3],LOW);//VEDE p/1
+  Serial.println("Led VERDE P/1 está apagado");
+
+  digitalWrite(led [4],HIGH);// VERMELHO P/1
+  Serial.println("Led VERMELHO P/1 está aceso");
+
+//pedestre 2
+  digitalWrite(led [8],HIGH);//VERDE P/2
+  Serial.println("Led VERDE P/2 esta aaceso");
+
+  digitalWrite(led [9],LOW);//VERMELHO P/2 
+  Serial.println("Led VERMELHO P/2 esta apagado");
+  
+  
+  delay(3000); // Wait for 1000 millisecond(s)
+  
+  //semaforo 1
+  
+  digitalWrite(led [0],LOW);//VERDE 1
+  Serial.println("Led VERDE 1 esta apagado");
+
+  digitalWrite(led [1], HIGH);//AMARELO 1
+  Serial.println("Led AMARELO 1 esta aceso");
+
+  digitalWrite(led [2], LOW);//VERMELHO 1
+  Serial.println("Led VEREMELHO 1 esta apagado");
+
+//semaforo 2
+  
+  digitalWrite(led [5],LOW);//VERDE 2
+  Serial.println("Led VERDE 2 esta apagado");
+
+  digitalWrite(led [6], LOW);//AMARELO 2
+  Serial.println("Led AMARELO 2 esta apagado");
+
+  digitalWrite(led [7], HIGH);//VERMELHO 2
+  Serial.println("Led VERMELHO 2 esta aceso");
+
+ //pedestre 1
+  digitalWrite(led [3],LOW);//VEDE p/1
+  Serial.println("Led VERDE P/1 está apagado");
+
+  digitalWrite(led [4],HIGH);// VERMELHO P/1
+  Serial.println("Led VERMELHO P/1 está aceso");
+
+//PEDESTERE 2
+  digitalWrite(led[9],LOW);
+  digitalWrite(led[8], HIGH);
+  delay(300);
+  digitalWrite(led[9], LOW);
+  digitalWrite(led[8], HIGH);
+  delay(300);
+  digitalWrite(led[9], LOW);
+  digitalWrite(led[8], HIGH);
+  delay(300);
+  digitalWrite(led[9], LOW);
+  digitalWrite(led[8], HIGH);
+  delay(300);
+  digitalWrite(led[9], LOW);
+  digitalWrite(led[8], HIGH);
+  delay(180);
+  digitalWrite(led[9],LOW);
+  digitalWrite(led[8], LOW);
+  delay(180);
+  digitalWrite(led[9],LOW);
+  digitalWrite(led[8], HIGH);
+  delay(180);
+  digitalWrite(led[9],LOW);
+  digitalWrite(led[8], LOW);
+  delay(180);
+  digitalWrite(led[9],LOW);
+  digitalWrite(led[8], HIGH);
+  delay(180);
+  digitalWrite(led[9],LOW);
+  digitalWrite(led[8], LOW);
+  delay(180);
+  digitalWrite(led[9],LOW);
+  digitalWrite(led[8], HIGH);
+  
+ 
+  
+  
+ //semaforo 1
+  
+  digitalWrite(led [0],LOW);//VERDE 1
+  Serial.println("Led VERDE 1 esta apagado");
+
+  digitalWrite(led [1], LOW);//AMARELO 1
+  Serial.println("Led AMARELO 1 esta apagado");
+
+  digitalWrite(led [2], HIGH);//VERMELHO 1
+  Serial.println("Led VEREMELHO 1 esta aceso");
+
+//semaforo 2
+  
+  digitalWrite(led [5],HIGH);//VERDE 2
+  Serial.println("Led VERDE 2 esta aceso");
+
+  digitalWrite(led [6], LOW);//AMARELO 2
+  Serial.println("Led AMARELO 2 esta apagado");
+
+  digitalWrite(led [7], LOW);//VERMELHO 2
+  Serial.println("Led VERMELHO 2 esta apagado");
+
+ //pedestre 1
+  digitalWrite(led [3],HIGH);//VEDE p/1
+  Serial.println("Led VERDE P/1 está aceso");
+
+  digitalWrite(led [4],LOW);// VERMELHO P/1
+  Serial.println("Led VERMELHO P/1 está apagado");
+
+
+//pedestre 2
+  digitalWrite(led [8],LOW);//VERDE P/2
+  Serial.println("Led VERDE P/2 esta apagado");
+
+  digitalWrite(led [9],HIGH);//VERMELHO P/2 
+  Serial.println("Led VERMELHO P/2 esta aceso");
+  
+  
+  delay(2400); // Wait for 1000 millisecond(s)
+
+//semaforo 1
+  
+  digitalWrite(led [0],LOW);//VERDE 1
+  Serial.println("Led VERDE 1 esta apagado");
+
+  digitalWrite(led [1], LOW);//AMARELO 1
+  Serial.println("Led AMARELO 1 esta apagado");
+
+  digitalWrite(led [2], HIGH);//VERMELHO 1
+  Serial.println("Led VEREMELHO 1 esta aceso");
+
+//semaforo 2
+  
+  digitalWrite(led [5], LOW);//VERDE 2
+  Serial.println("Led VERDE 2 esta apagado");
+
+  digitalWrite(led [6], HIGH);//AMARELO 2
+  Serial.println("Led AMARELO 2 esta aceso");
+
+  digitalWrite(led [7], LOW);//VERMELHO 2
+  Serial.println("Led VERMELHO 2 esta apagado");
+
+ //pedestre 1
+  
+  digitalWrite(led[4],LOW);
+  digitalWrite(led[3], HIGH);
+  delay(300);
+  digitalWrite(led[4], LOW);
+  digitalWrite(led[3], HIGH);
+  delay(300);
+  digitalWrite(led[4], LOW);
+  digitalWrite(led[3], HIGH);
+  delay(300);
+  digitalWrite(led[4], LOW);
+  digitalWrite(led[3], HIGH);
+  delay(300);
+  digitalWrite(led[4], LOW);
+  digitalWrite(led[3], HIGH);
+  delay(180);
+  digitalWrite(led[4],LOW);
+  digitalWrite(led[3], LOW);
+  delay(180);
+  digitalWrite(led[4],LOW);
+  digitalWrite(led[3], HIGH);
+  delay(180);
+  digitalWrite(led[4],LOW);
+  digitalWrite(led[3], LOW);
+  delay(180);
+  digitalWrite(led[4],LOW);
+  digitalWrite(led[3], HIGH);
+  delay(180);
+  digitalWrite(led[4],LOW);
+  digitalWrite(led[3], LOW);
+  delay(180);
+  digitalWrite(led[4],LOW);
+  digitalWrite(led[3], HIGH);
+  
+
+
+//pedestre 2
+  digitalWrite(led [8],LOW);//VERDE P/2
+  Serial.println("Led VERDE P/2 esta apagado");
+
+  digitalWrite(led [9],HIGH);//VERMELHO P/2 
+  Serial.println("Led VERMELHO P/2 esta aceso");}
+  
