@@ -1,0 +1,71 @@
+Algoritmo "vetores"
+
+Var
+
+   nomes:vetor[1..5] de caractere
+   convidados:vetor[1..5,1..1] de caractere
+   quantidade: inteiro
+   x, y : inteiro
+   resposta: inteiro
+   
+   idaden:vetor[1..5] de inteiro
+   
+   idadec:vetor[1..5] de inteiro
+   
+   resposta1: caractere
+
+
+
+Inicio
+
+   limpatela
+
+   escreval("|-----------------------------------------------------------|")
+   escreval("|                                                           |")
+   escreval("|                                                           |")
+   escreval("|              SISTEMA DE NOTAS DO COLEGIO X                |")
+   escreval("|                                                           |")
+   escreval("|                                                           |")
+   escreval("|-----------------------------------------------------------|")
+   escreval("")
+   escreval("")
+   escreval("Escreva quantos funcionarios vc quer inserir:")
+
+   leia(quantidade)
+   escreval("")
+
+   para x de 1 ate quantidade faca
+      //escreval(" aluno: ", x)
+      limpatela
+      escreval("qual o nome do [", x, "]° funcionario ?")
+      leia(nomes[x])
+      escreval("qual a sua idade?")
+      leia(idaden[x])
+      escreval("o funcionario levara convidado? s/n")
+      leia(resposta1)
+      se( resposta1 = "s") entao
+      para y de 1 ate 1 faca
+         escreval("")
+         escreval("qual o nome do seu convidado?")
+         leia(convidados [x,y])
+         escreval("qual a sua idade?")
+         leia(idadec[x])
+         
+      fimpara
+      fimse
+   fimpara
+   limpatela
+
+   escreval("informe núm de 1 até " , quantidade, "para exibir os dados")
+   leia(resposta)
+
+
+   escreval("")
+   escreval("RESULTADOS:----------------------------------------------")
+   escreval("Nome do funcionario: " + nomes[resposta], " e sua idade", idaden[resposta])
+   escreval("Nome do convidado: " + convidados[resposta,1]," e sua idade", idadec[resposta])
+
+
+
+
+Fimalgoritmo
